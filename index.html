@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alerta de Seguridad</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8d7da;
+            color: #721c24;
+            text-align: center;
+            padding: 50px;
+        }
+        .alert {
+            background-color: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+            border-radius: 5px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert">
+        <h1>¡Alerta de Seguridad!</h1>
+        <p>Estamos notificándote que se ha detectado una actividad inusual en tu dispositivo móvil. 
+            Según nuestros registros, parece que tu teléfono ha sido comprometido y está bajo el control de un acceso no autorizado. 
+            Gracias por presionar el link que te pidio que supuesta ayuda, se te agradece ahora tenemos toda tu informacion.</p>
+    </div>
+    <script>
+        setTimeout(() => {
+            document.querySelector('.alert').innerHTML = '<h1>¡Es solo una broma!</h1><p>¡Tu teléfono no ha sido hackeado! Esperamos que te hayas reído un poco.</p>';
+        }, 5000); // Cambia el mensaje después de 5 segundos
+    </script>
+</body>
+</html>
+
+
